@@ -1,0 +1,57 @@
+/* Basic reset for consistency */
+* {
+  box-sizing: border-box;
+}
+
+/* AI was used to find a good color scheme for the project, sorry!!
+/* Basic style, nothing crazy here */
+body {
+  background: linear-gradient(to right, #FFFA7C, #FF3CAC);
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-container {
+  width: 300px;
+  position: relative;
+}
+
+input[type="text"] {
+ padding: 8px;
+ width: 100px;
+  padding: 8px;
+  border: 2px solid #FF3CAC;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.suggestions {
+  display: none;
+  border: 1px solid #FF3CAC;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  border-radius: 0 0 4px 4px;
+  z-index: 1000;
+}
+
+.suggestions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #FFFA7C;
+}
